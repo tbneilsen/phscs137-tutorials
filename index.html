@@ -4,32 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PHSCS 137 Battery Tutorial</title>
+  <title>PHSCS 137 Tutorials</title>
 </head>
 <body>
-  <h1>Energy and Power Tutorial</h1>
-  <p>Battery capacity: 296 Wh</p>
-  <p>Maximum output power: 350 W</p>
+  <h1>PHSCS 137 Interactive Tutorials</h1>
+  <p>Energy, Climate, and the Environment</p>
 
-  <label for="power">Device power (W):</label>
-  <input type="range" id="power"
-         min="10" max="350" value="50">
-
-  <p id="result"></p>
-
-  <script>
-    const slider = document.getElementById("power");
-    const result = document.getElementById("result");
-
-    function update() {
-      const power = Number(slider.value);
-      const hours = 296 / power;
-      result.textContent =
-        `Device: ${power} W; Ideal battery life: ${hours.toFixed(2)} hours`;
-    }
-
-    slider.addEventListener("input", update);
-    update();
-  </script>
+  <ul>
+    <li>
+      <a href="battery-power/">
+        Energy and Power: Battery Tutorial
+      </a>
+    </li>
+  </ul>
 </body>
 </html>
